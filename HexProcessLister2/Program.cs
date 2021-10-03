@@ -29,6 +29,7 @@ public class ProcessChecker
                   ($"Process Id in Hex:", processRecord.Id)).ToString();
 
                 Console.WriteLine(output);
+                Console.ReadLine();
             }
         }
     }
