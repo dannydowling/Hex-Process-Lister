@@ -8,14 +8,12 @@ class ProcessLister
     static void Main(string[] args)
     {
         var processes = new GetProcesses();
-        processes.ListProcesses();             
+        processes.ListProcesses();
         Console.ReadLine();
     }
 }
-
 public class GetProcesses
-{
-    public Dictionary<string, List<string>> ListProcesses()
+{    public Dictionary<string, List<string>> ListProcesses()
     {
         Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
 
