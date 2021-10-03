@@ -5,7 +5,7 @@ using System.Globalization;
 
 class ProcessLister
 {
-    static void Main(string[] args)
+    static void Main()
     {
         var processes = new GetProcesses();
         processes.ListProcesses();
