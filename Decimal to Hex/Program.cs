@@ -9,7 +9,7 @@ class ProcessLister
         var convert = new Decimal_to_Hex.ConvertToHex();
         var processDictionary = processes.ListProcesses();
        var result =  convert.ToHex(processDictionary);
-        Console.WriteLine(result);  
-
+        Console.WriteLine(result);
+        Console.ReadLine();
     }
 }
