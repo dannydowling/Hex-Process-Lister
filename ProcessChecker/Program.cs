@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 
+
 public class ProcessChecker
 {    
     public record ProcessRecord(string ProcessName,bool Responding, string Id, string HandleCount);
@@ -28,8 +29,9 @@ public class ProcessChecker
                    ($"Number of Handles:", processRecord.HandleCount),
                   ($"Process Id in Hex:", processRecord.Id)).ToString();
 
+               
                 Console.WriteLine(output);
-                Console.ReadLine();
+                Console.ReadKey();
             }
         }
     }
