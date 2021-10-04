@@ -8,12 +8,12 @@ class ProcessLister
     static void Main()
     {
         var processes = new GetProcesses();
-        processes.ListProcesses();
-        Console.ReadLine();
+        processes.ListProcesses();        
     }
 }
 public class GetProcesses
-{    public Dictionary<string, List<string>> ListProcesses()
+{
+    public Dictionary<string, List<string>> ListProcesses()
     {
         Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
 
@@ -34,10 +34,13 @@ public class GetProcesses
                 values.Add(Convert.ToString((theprocess.Id), 16));
                 result.Add(theprocess.ProcessName, values);
             }
-
-            Console.WriteLine("Process added: {0}, {1}", theprocess.ProcessName,
-                (Convert.ToString((theprocess.Id), 16)));
+            if (result.Count % 10 == 0)
+            {
+                Console.ReadLine();
+            }
+            Console.WriteLine("{0}, {1}", theprocess.ProcessName, (Convert.ToString((theprocess.Id), 16)));
         }
         return result;
     }
 }
+
