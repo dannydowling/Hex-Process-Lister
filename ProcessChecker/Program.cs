@@ -15,7 +15,7 @@ public class ProcessChecker
         Console.WriteLine("Please choose from the following options...");
         Console.WriteLine("1: List all running processes");
         Console.WriteLine("2: Check for abandoned processes");
-        Console.WriteLine("3: Poll for abandoned processes with 10 seconds of delay");
+        Console.WriteLine("3: Poll for abandoned processes with 5 seconds of delay");
         Console.WriteLine("");
         Console.WriteLine("Enter your selected option and press Enter...");
 
